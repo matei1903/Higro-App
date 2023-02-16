@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      /* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #07202f; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #0e3e5b; 
+}
+    </style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self'" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script src="js/script.js" defer></script>
+    <script src="index.html"></script>
+    <script src="db.html"></script>
+    <title>Higro App</title>
+  </head>
+  <body class="bg-teal-700" style="overflow: auto;">
+    <div>
+    
+      <label id="mylabel" style="margin-left: 10px;">  <b>Introduceti temperatura de la interior</b></label><br>
+      <input type="number" id="tmpint" style="border-bottom: 2px solid #041917; margin-left: 20px;  background-color: #0b4540; border-radius: 10px; box-shadow:0 0 15px 4px rgba(0,0,0,0.06); color: #adadad; border-top: none; border-left: none; border-right: none; padding-left: 10px;"><br>
+      <label id="mylabel1" style="margin-left: 10px;"> <b>Introduceti temperatura de la exterior</b></label><br>
+      <input type="number" id="tmpext" style="border-bottom: 2px solid #041917; margin-left: 20px;  background-color: #0b4540; border-radius: 10px; box-shadow:0 0 15px 4px rgba(0,0,0,0.06); color: #adadad; border-top: none; border-left: none; border-right: none; padding-left: 10px;"><br>
+      <label id="mylabel2" style="margin-left: 10px;"> <b>Introduceti umiditatea de la interior</b></label><br>
+      <input type="number" id="umidint" style="border-bottom: 2px solid #041917; margin-left: 20px; background-color: #0b4540; border-radius: 10px; box-shadow:0 0 15px 4px rgba(0,0,0,0.06); color: #adadad; border-top: none; border-left: none; border-right: none; padding-left: 10px;"><br>
+      <label id="mylabel3" style="margin-left: 10px; font-weight: 600;"> Introduceti umiditatea de la exterior</label><br>
+      <input type="number" id="umidext" style="border-bottom: 2px solid #041917; margin-left: 20px; background-color: #0b4540; border-radius: 10px; box-shadow:0 0 15px 4px rgba(0,0,0,0.06); color: #adadad; border-top: none; border-left: none; border-right: none; padding-left: 10px;"><br>
+    
+      <button id="mybutton" style="margin-left: 10px; margin-top: 10px;">Submit</button>
+      <h1 id="h1"></h1>
+      <fieldset style="position: absolute; top: 10px; left: 50%; transform: translate(-30%, 0%); box-sizing: border-box; border: 1px solid black; width: 350px; height: 140px;">
+        <legend>Presiunile</legend>
+        <label id="calcul"></label>
+      </fieldset>
+    </div>  
+    
+   <div>
+    <label style="margin-left: 10px; font-family: Poppins, sans-serif;"><b>Selectati materialul si grosimea pentru fiecare strat [m]</b></label>
+    <hr>
+   </div>
+
+  </body>
+  
+</html>
